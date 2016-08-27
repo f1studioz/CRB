@@ -275,6 +275,7 @@ font-size: 22px;
     position: absolute;
     top:0px;
     left: 0px;
+    background-attachment:fixed;
 }
 .cta-title{
     color: #fff;
