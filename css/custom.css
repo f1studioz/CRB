@@ -174,6 +174,12 @@ header#header.header-static {
     position: fixed;
     width: 100%;
 }
+a.sign-in-btn:hover {
+    background-color: #ED6B2B;
+    color: #fff;
+}
+
+
 /********************************insightss**********************/
 .post-3-columns .post-image{
     margin-bottom: 0px;
