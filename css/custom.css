@@ -263,6 +263,10 @@ font-size: 22px;
 .post-content-details.small-font {
     min-height: 224px;
 }
+.col-md-6.post-cont:hover .post-title h1,.col-md-6.post-cont:hover .post-description p,.col-md-6.post-cont:hover .post-info a {
+    color: #0B9ADA;
+}
+
 /********************************insights**********************/
 
 /**********************************Cta Section*******************/
