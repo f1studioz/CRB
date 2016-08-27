@@ -34,15 +34,18 @@ p.custom-subtitle{
 .slider-1{
      background:url('../images/custom-images/crb/rich_couple.jpg') no-repeat; 
       background-size:cover;
+      background-attachment:fixed;
     
 }
 .slider-2{
      background:url('../images/custom-images/crb/rich_couple.jpg') no-repeat; 
       background-size:cover;
+      background-attachment:fixed;
 }
 .slider-3{
      background:url('../images/custom-images/crb/rich_couple.jpg') no-repeat; 
     background-size:cover; 
+    background-attachment:fixed;
 }
     
 .sliders h1{
