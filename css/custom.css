@@ -166,6 +166,11 @@ margin-top: 20px}
 #header,#header.header-sticky #header-wrap{
  background: rgba(255,255,255,0.7);   
 }
+
+header#header.header-static {
+    position: fixed;
+    width: 100%;
+}
 /********************************insightss**********************/
 .post-3-columns .post-image{
     margin-bottom: 0px;
