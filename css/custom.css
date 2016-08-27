@@ -251,6 +251,9 @@ font-size: 22px;
     bottom: 0px;
     
 }
+.post-content-details.small-font {
+    min-height: 224px;
+}
 /********************************insights**********************/
 
 /**********************************Cta Section*******************/
