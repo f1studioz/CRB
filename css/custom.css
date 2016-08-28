@@ -97,6 +97,7 @@ p.custom-subtitle{
     width: 0%;
     transition:width 1s;
     background: #ea6a2b;
+    margin: 0 auto;
     left:0;
     top:14px;
    
@@ -988,13 +989,21 @@ section.services {
         margin-right:0px;
     }
      #mainMenu > ul {
-    height: auto;
-    margin-left:10px;
-    }
+    margin-left: 0px;
+    position: absolute;
+    text-align: center;
+    top: 39%;
+    transform: translateY(-39%);
+    vertical-align: middle;
+}
    
     #header{
  background:#fff;
 }
+    #mainMenu {
+    float: left;
+    height: 100vh;    
+    }
 }
 @media(max-width:580px){
     .fullscreen .text-small{
@@ -1071,9 +1080,7 @@ section.services {
     #shopping-cart{
         display: none;
     }
-    #mainMenu > ul{
-        margin-left: 10px;
-    }
+  
     .cta-sec .col-md-6{
         margin-bottom: 50px;
     }
