@@ -34,18 +34,8 @@ p.custom-subtitle{
 .slider-1{
      background:url('../images/custom-images/crb/rich_couple.jpg') no-repeat; 
       background-size:cover;
-
+    background-attachment: fixed;
     
-}
-.slider-2{
-     background:url('../images/custom-images/crb/rich_couple.jpg') no-repeat; 
-      background-size:cover;
-
-}
-.slider-3{
-     background:url('../images/custom-images/crb/rich_couple.jpg') no-repeat; 
-    background-size:cover; 
- 
 }
     
 .sliders h1{
@@ -131,7 +121,7 @@ p.custom-subtitle{
 }
 #mainMenu > ul > li > a {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     color: #094c73;
 height: auto;
 line-height: normal;
@@ -253,6 +243,10 @@ font-size: 22px;
     position: relative;
     background: #0b9ada;
    padding: 15px ;
+    cursor: pointer;
+}
+.blue-box:hover .title-post {
+    color: #333;
 }
 .arrow{
     position: absolute;
@@ -265,6 +259,7 @@ font-size: 22px;
 }
 .post-cont:hover .post-title h1,.post-cont:hover .post-description p,.post-cont:hover .post-info a {
     color: #0B9ADA;
+    cursor: pointer;
 }
 
 /********************************insights**********************/
@@ -315,6 +310,11 @@ color: #fff;
 }
 .margin-button-setting{
     margin-top: 33px;
+}
+a.button.color:hover {
+    background: #fff;
+    color: #094c73;
+   
 }
 /******************************Footer Section*******************/
 footer.background-custom{
@@ -898,6 +898,24 @@ section.services {
 
 /************************************Design 2 footer ends***********************/
 
+@media(max-width:1500px){
+    #mainMenu > ul {
+    height: auto;
+    margin-left: 175px;
+    }
+}
+@media(max-width:1280px){
+    #mainMenu > ul {
+    height: auto;
+    margin-left: 94px;
+    }
+}
+@media(min-width:1550px){
+    #mainMenu > ul {
+    height: auto;
+    margin-left:245px;
+    }
+}
 @media(max-width:768px){
     .fullscreen .text-small{
         margin:0px 30px;
@@ -969,6 +987,14 @@ section.services {
         margin-top:50px;
         margin-right:0px;
     }
+     #mainMenu > ul {
+    height: auto;
+    margin-left:10px;
+    }
+   
+    #header{
+ background:#fff;
+}
 }
 @media(max-width:580px){
     .fullscreen .text-small{
@@ -1130,7 +1156,5 @@ section.services {
     line-height: 40px;
 }
 
-#header{
- background:#fff;
-}
+
 }
