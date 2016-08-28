@@ -135,7 +135,7 @@
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide">
-                        <div class='sliders home-slider slider-1'>
+                        <div class='sliders home-slider slider-1' data-stellar-background-ratio='0.1'>
                             <div class="container">
                                
                                 <div class="row">
@@ -155,49 +155,7 @@
                         </div>
                     </div>
                     
-                    <div class="swiper-slide">
-                        <div class='sliders home-slider slider-3'>
-                            <div class="container">
-                              
-                                <div class="row">
-                                    <div class="col-md-8 slider-content">
-                                      <div class="middle-content">
-                                        <h1>Advice.<br>
-                                            Beyond<br>
-                                            <span class='orange'>investing.</span></h1>
-                                            <p>You see your bigger picture.<br>So should your financial advice.</p>
-                                        </div>
-                                        <!-- <a href='#' class="btn">SCHEDULE A DEMO</a>-->
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class='sliders home-slider slider-2'>
-                            <div class="container">
-                                
-                                <div class="row">
-                                    <div class="col-md-8 slider-content">
-                                       <div class="middle-content">
-                                        <h1>Advice.<br>
-                                            Beyond<br>
-                                            <span class='orange'>investing.</span></h1>
-                                            <p>You see your bigger picture.<br>So should your financial advice.</p>
-                                        </div>
-                                        <!-- <a href='#' class="btn">SCHEDULE A DEMO</a>-->
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
-                
-                <div class="swiper-pagination"></div>
                 
             </div>                  
             
@@ -439,7 +397,7 @@
 </div>
 </div>
 </section>
-<section class="cta-sec">
+<section class="cta-sec" data-stellar-background-ratio='0.1'>
  <div class="container">
     <div class="row">
        <div class="col-md-6">
@@ -764,6 +722,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS3735mjSJsQ-tROUfaLqkuAj
 
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+<script src="js/jquery.stellar.js"></script>    
 <script src='js/swiper.jquery.min.js'></script>
 
 <script>
@@ -776,6 +735,10 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS3735mjSJsQ-tROUfaLqkuAj
       simulateTouch:false 
       
   }) 
+    $(document).ready(function(){
+        $(window).stellar();
+        });
+        
 </script>
 </body>
 
