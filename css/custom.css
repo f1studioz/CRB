@@ -118,7 +118,7 @@ p.custom-subtitle{
 }
 #header, #header-wrap, #logo img{
     height:auto;
-  
+   border-bottom: none;
      
 }
 #header.header-sticky:not(.header-static) #logo img{
@@ -344,6 +344,9 @@ footer .widget.widget-newsletter .btn{
     color:rgba(255,255,255,0.84);
     line-height: 28px;
 }
+#footer .widget-categories  a:hover{
+    color: rgba(255,255,255,1);
+}
 footer .custom-feild{
     background: none;
     border-radius:3px;
@@ -390,9 +393,13 @@ footer .widget.widget-newsletter .form-control{
     border-radius: 3px 0px 3px 0px;
     background: none;
     border:1px solid #6a757b;
+    color:rgba(255,255,255,0.8);
 }
 footer .social ul li i{
      color:#ebca7f;
+}
+footer .social ul li i:hover{
+     color:#f2c153;
 }
 footer .social ul{
     padding-left: 0px;
@@ -902,17 +909,18 @@ section.services {
 /************************************Retail Page***************/
 .tabs-content{
     padding: 0px;
-    position: relative
-        
+    position: relative;
+    margin-bottom:0px;  
+    border: none;
 }
 .slider-bg-img{
     height: 100vh;
-      padding-top: 180px;  
+      padding-top: 180px;      
 }
 .slider-bg-img.tab-1{
-    background: url('../images/custom-images/crb/travel2.jpg') no-repeat;
+    background: url('../images/custom-images/crb/banner.jpg') no-repeat;
     background-size: cover;
-    
+    background-position:-850px;
 }
 .slider-bg-img.tab-2{
     background: url('../images/custom-images/crb/mortgage.jpg') no-repeat;
@@ -921,6 +929,7 @@ section.services {
 .slider-bg-img.tab-3{
     background: url('../images/custom-images/crb/Mobile%20Banking%20with%20Coffee.jpg') no-repeat;
     background-size: cover;
+    padding-top: 250px;
 }
 .slider-bg-img.tab-4{
     background: url('../images/custom-images/crb/travel2.jpg') no-repeat;
@@ -940,10 +949,11 @@ section.services {
     font-weight: 400;
     font-size: 15px;
     margin:0px 1px;
-    padding: 20px;
+    padding: 25px;
     color: rgba(255,255,255,0.9);
     border:none;
     background: rgba(0, 0, 0,0.4);
+    letter-spacing: 0px;
 }
 .color .tabs-navigation li.active a,.tabs-navigation li a:hover{
     background: rgba(234,106,43,0.8);
@@ -953,8 +963,8 @@ section.services {
 .border .tabs-navigation li.active a:after{
     background: none;
 }
-.content h1{
-    text-align: center;
+.tab-slider .content h1{
+    
     font-size: 60px;
     font-weight: 900;
     line-height:65px;
@@ -962,13 +972,221 @@ section.services {
     color: #fff;
 
 }
-.content p{
-    color: #fff;
-    font-size: 14px;
+.tab-1 .content h1,.tab-1 .content p{
     text-align: center;
-    font-weight: 400;
 }
 
+.tab-slider .content p{
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+.tab-1 .content p,.tab-4 .content p{
+    color: #fff;
+}
+.orange{
+    color: #ea6a2b;
+}
+/*********************************Products**************************/
+.products{
+    background: #f7f7f7;
+}
+.products .post-image{
+    border-radius: 3px 3px 0px 0px;
+   
+    height:195px;
+}
+.products h1.custom-title{
+    margin-bottom: 90px;
+}
+.products .post-image.img1{
+    background: url('../images/custom-images/crb/bta-cvp-0416.jpg') no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+}
+.products .post-image.img2{
+    background: url('../images/custom-images/crb/greece-tmc-buynow-01.jpg') no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+}
+.products .post-image.img3{
+    background: url('../images/custom-images/crb/open-an-account-with-our-app.jpg') no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+}
+.products .post-image.img4{
+    background: url('../images/custom-images/crb/cc-zero-fee-offer.jpg') no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+}
+.products .post-image.img5{
+    background: url('../images/custom-images/crb/CB-PL-HPCard-780x208.jpg') no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+}
+.products .post-image.img6{
+    background: url('../images/custom-images/crb/father-and-daughter-with_tablet_cvp.jpg') no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center; 
+}
+.products .post-item{
+    border-bottom: none;
+    padding-bottom: 0px;
+    
+    border-radius: 3px;
+    padding: 0px 16px;
+}
+.products .post-content-details{
+    padding-left:15px;
+    padding-right: 40px;
+    background: #fff;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 0px  1px 8px rgba(0,0,0,0.08); 
+}
+
+.products .post-title h3 a{
+    text-transform: capitalize;
+    line-height: 22px;
+    font-size: 15px;
+    color: #231f20;
+    display: inline-block;
+} 
+.products .post-content-details .post-description p{
+    font-size: 15px;
+    color: #231f20;
+}
+.products .post-description{
+    min-height: 60px;
+}
+.products .post-info{
+    padding-top:45px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+.products a.read-more {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #107bbf;
+}
+.products .post-item:hover  .post-content-details {
+        box-shadow: 0px  1px 20px rgba(0,0,0,0.09); 
+}
+.products .post-item:hover a.read-more{
+    color: #ea6a2b;
+}
+.products .post-item:first-child .post-info{
+    padding-top: 30px;
+}
+
+/*********************************Products****************************/
+/**********************************insight-retail*********************/
+.insight-cont{
+    padding:0px 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.insight-image{
+    height: 307px;
+    width: 100%;
+}
+.insight-image.img-1{
+     background: url('../images/custom-images/crb/Student_Loans.jpeg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+.insight-image.img-2{
+     background: url('../images/custom-images/crb/How-to-Save-Money-on-Vacation_copy.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+.insight-image.img-3{
+     background: url('../images/custom-images/crb/first_time_homebuyer.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+.insight-image.img-4{
+     background: url('../images/custom-images/crb/Grown-Ups_Playground_Hero.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+.insight-image.img-5{
+     background: url('../images/custom-images/crb/West_Coast_Trail.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+.insight-text{
+    padding-top: 10px;    
+    padding-right:100px;
+}
+.insight-text a{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: inline-block;
+     color: #3e474c;
+}
+.insight-cont:hover .insight-text a{
+    text-decoration: underline !important;
+}
+/*************************************insight-retail**********************************/
+/*******************************************take-control****************/
+.take-control{
+    background: #4b4b4b;
+}
+.take-control h1.custom-title{
+    color: #fff !important;
+}
+.take-control h3{
+    font-size: 18px;
+    color:rgba(255,255,255,0.9);
+}
+.icon-box .img-responsive{
+    width:80px;
+    display: inline-block;
+    margin:80px 0px 40px 0px;
+    
+}
+.icon-box:after {
+    content: '';
+    width: 140px;
+    height: 140px;
+    top: 52px;
+    position: absolute;
+    left: 62px;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 3px solid #ebcb80;
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+.icon-box:hover:after{
+    transform: scale(1);
+}
+.icon-box{
+    margin-bottom: 0px;
+    position: relative;
+}
+
+/*******************************************take-control****************/
+/************************************Footer-retaisl********************/
+.head-links .widget-title{
+    margin-bottom: 5px;
+}
+footer .social ul li{
+    margin-right: 17px;
+}
+.news{
+    padding-right:40px;
+}
+/************************************Footer-retaisl********************/
 /************************************Retail Page***********************/
 
 @media(max-width:1500px){
@@ -1076,6 +1294,64 @@ section.services {
     float: left;
     height: 100vh;    
     }
+    .tabs-navigation li, .tabs-vertical .tabs-navigation li, .justified .tabs-navigation li, .justified .tabs-navigation li, .tabs-right .tabs-navigation li, .tabs-right .tabs-navigation li{
+            width:25%;
+    float: left;
+    display: inherit;
+    text-align: left;
+    }
+    .tabs-navigation li a {
+        padding:15px;
+        font-size: 14px;
+        margin: 0.5px;
+    }
+    .tab-slider h1{
+        margin-top:150px;    
+    }
+      #shopping-cart{
+        display: none;
+    }
+    .slider-bg-img.tab-1{
+    background: url('../images/custom-images/crb/banner.jpg') no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.slider-bg-img.tab-2{
+    background: url('../images/custom-images/crb/mortgage.jpg') no-repeat;
+    background-size: cover;
+    background-position:bottom left;
+}
+.slider-bg-img.tab-3{
+    background: url('../images/custom-images/crb/Mobile%20Banking%20with%20Coffee.jpg') no-repeat;
+    background-size: cover;
+    padding-top: 250px;
+}
+.slider-bg-img.tab-4{
+    background: url('../images/custom-images/crb/travel2.jpg') no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+      #mainMenu{
+       
+        background: #ea6a2b;
+    }
+    #header-wrap .container-fluid{
+        padding:0px;
+    }
+    #logo,.nav-main-menu-responsive{
+        padding:0px 15px;
+    }
+    .main-menu > ul > li{
+        border:none;
+    }
+    #mainMenu > ul > li > a{
+        color: #fff;
+        font-size: 18px;
+    }
+    #mainMenu > ul > li.active > a,#mainMenu > ul > li > a:hover{
+        color:#094c73;
+    }
+
 }
 @media(max-width:580px){
     .fullscreen .text-small{
@@ -1234,6 +1510,32 @@ section.services {
     font-size: 36px;
     line-height: 40px;
 }
-
-
+    .products{
+        padding:15px;
+    }
+    .tab-slider .content h1{
+        margin-top:30px;
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .tabs-navigation li a {
+        padding:5px;
+        font-size: 12px;
+    }
+    .slider-bg-img.tab-3{
+        padding-top:100px;
+    }
+    .slider-bg-img.tab-4{
+        padding-top:100px;
+    }
+    .tabs-navigation li a{
+        margin:0px;
+    }
+      .tabs-navigation li, .tabs-vertical .tabs-navigation li, .justified .tabs-navigation li, .justified .tabs-navigation li, .tabs-right .tabs-navigation li, .tabs-right .tabs-navigation li{
+            width: 50%;
+    float: left;
+    display: inherit;
+    text-align: left;
+    }
+  
 }
