@@ -918,7 +918,7 @@ section.services {
 }
 .slider-bg-img{
     height: 100vh;
-      padding-top: 180px;      
+      padding-top: 250px;      
 }
 .slider-bg-img.tab-1{
     background: url('../images/custom-images/crb/banner.jpg') no-repeat;
@@ -1203,6 +1203,11 @@ footer .social ul li{
     #mainMenu > ul {
     height: auto;
     margin-left: 94px;
+    }
+}
+@media(min-width:1400px){
+    .slider-bg-img.tab-1,.slider-bg-img.tab-2{
+        padding-top:250px;
     }
 }
 @media(min-width:1550px){
