@@ -1178,7 +1178,9 @@ section.services {
     margin-bottom: 0px;
     position: relative;
 }
-
+.gototop-button{
+    background: #ea6a2b;
+}
 /*******************************************take-control****************/
 /************************************Footer-retaisl********************/
 .head-links .widget-title{
@@ -1581,5 +1583,7 @@ section.services {
             font-size: 35px;
             line-height: 35px;
     }
-
+    .gototop-button{
+        display: none !important;
+    }
 }
