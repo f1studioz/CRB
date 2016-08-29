@@ -1371,13 +1371,15 @@ footer .social ul li{
     }
 .middle-content {
     position:static;
-   margin-top: 35%;
+   margin-top:150px;
+   transform:translate(0%,0%);
         text-align: center;}
 }
 @media (max-width: 580px){
     .middle-content {
-    margin-top:35%;
+    margin-top:120px;
     position:static;
+    
     text-align: center;
 }
 .middle-content h1 {
