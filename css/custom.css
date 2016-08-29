@@ -1375,7 +1375,18 @@ footer .social ul li{
     transform: translate(18%,0%); 
         text-align: center;}
 }
-
+@media (max-width: 580px){
+    .middle-content {
+    top: 35%;
+    transform: translate(0%,0%);
+    text-align: center;
+}
+.middle-content h1 {
+    font-size: 35px;
+    line-height: 35px;
+    color: #fff;
+}
+}
 @media(max-width:480px){
     .fullscreen .text-small{
         font-size: 14px !important;
