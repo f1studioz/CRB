@@ -1370,9 +1370,8 @@ footer .social ul li{
         color:#094c73;
     }
 .middle-content {
-    
+    position:static;
    margin-top: 35%;
-    transform: translate(18%,0%); 
         text-align: center;}
 }
 @media (max-width: 580px){
