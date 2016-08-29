@@ -917,13 +917,16 @@ section.services {
     border: none;
 }
 .slider-bg-img{
-    height: 100vh;
-      padding-top: 250px;      
+    height: 80vh;
+      padding-top: 180px;      
+}
+div#tabs-07 {
+    position: relative;
 }
 .slider-bg-img.tab-1{
     background: url('../images/custom-images/crb/banner.jpg') no-repeat;
     background-size: cover;
-    background-position:-850px;
+    background-position:-650px;
 }
 .slider-bg-img.tab-2{
     background: url('../images/custom-images/crb/mortgage.jpg') no-repeat;
@@ -1209,7 +1212,10 @@ footer .social ul li{
 }
 @media(min-width:1400px){
     .slider-bg-img.tab-1,.slider-bg-img.tab-2{
-        padding-top:380px;
+        padding-top:150px;
+    }
+     .slider-bg-img.tab-1{
+        background-position: 0px;
     }
 }
 @media(min-width:1550px){
@@ -1217,6 +1223,7 @@ footer .social ul li{
     height: auto;
     margin-left:245px;
     }
+   
 }
 @media(max-width:768px){
     .fullscreen .text-small{
