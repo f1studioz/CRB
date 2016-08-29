@@ -38,17 +38,22 @@ p.custom-subtitle{
     
 }
     
-.sliders h1{
+.middle-content h1{
     font-size: 60px;
     font-weight: 900;
     line-height:65px;
     margin-bottom: 10px;
-    color: #094c73;
+    color: #fff
+}
+.slider-content{
+    height: 100vh;
+    position: relative;
 }
 .middle-content{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100vh;
+    position: absolute;
+    top:50%;
+    transform: translate(50%,-50%);
+    text-align: center;
 }
 .middle-content p{
     font-weight: 500;
@@ -64,8 +69,8 @@ p.custom-subtitle{
     padding:8px 30px;
 }
 
-.orange{
-    color:#ea6a2b;
+.black{
+    color:#000;
 }
 .navbar-brand img{
     width: 220px;
@@ -894,10 +899,77 @@ section.services {
 
 /************************************Team (type 3) ends*****************/
 
-/************************************Design 2 Footer***************/
+/************************************Retail Page***************/
+.tabs-content{
+    padding: 0px;
+    position: relative
+        
+}
+.slider-bg-img{
+    height: 100vh;
+      padding-top: 180px;  
+}
+.slider-bg-img.tab-1{
+    background: url('../images/custom-images/crb/travel2.jpg') no-repeat;
+    background-size: cover;
+    
+}
+.slider-bg-img.tab-2{
+    background: url('../images/custom-images/crb/mortgage.jpg') no-repeat;
+    background-size: cover;
+}
+.slider-bg-img.tab-3{
+    background: url('../images/custom-images/crb/Mobile%20Banking%20with%20Coffee.jpg') no-repeat;
+    background-size: cover;
+}
+.slider-bg-img.tab-4{
+    background: url('../images/custom-images/crb/travel2.jpg') no-repeat;
+    background-size: cover;
+}
+.tabs-bottom ul.tabs-navigation{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width:100%;
+    z-index: 9;
+    text-align: center;
+}
+.tabs-navigation li a {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 15px;
+    margin:0px 1px;
+    padding: 20px;
+    color: rgba(255,255,255,0.9);
+    border:none;
+    background: rgba(0, 0, 0,0.4);
+}
+.color .tabs-navigation li.active a,.tabs-navigation li a:hover{
+    background: rgba(234,106,43,0.8);
+    color: #fff;
+    border: none;
+}
+.border .tabs-navigation li.active a:after{
+    background: none;
+}
+.content h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    line-height:65px;
+    margin-bottom: 10px;
+    color: #fff;
 
+}
+.content p{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
 
-/************************************Design 2 footer ends***********************/
+/************************************Retail Page***********************/
 
 @media(max-width:1500px){
     #mainMenu > ul {
