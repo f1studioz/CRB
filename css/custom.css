@@ -1360,7 +1360,11 @@ footer .social ul li{
     #mainMenu > ul > li.active > a,#mainMenu > ul > li > a:hover{
         color:#094c73;
     }
-
+.middle-content {
+    
+   top: 35%;
+    transform: translate(18%,0%); 
+        text-align: center;}
 }
 @media(max-width:580px){
     .fullscreen .text-small{
@@ -1492,10 +1496,10 @@ footer .social ul li{
 .middle-content {
     display: table-cell;
     vertical-align: middle;
-    height: 80vh;
+    height:100vh;
 }
 .home-slider {
-    height: 80vh;
+    height: 100vh;
 }
 p.custom-subtitle {
     margin-bottom: 0px;
@@ -1568,4 +1572,14 @@ section.services {
         opacity: 0.5;;
         background:#ea6a2b;
     }
+    .middle-content {
+    position: absolute;
+   top: 35%;
+    transform: translate(0%,0%); 
+        text-align: center;}
+        .middle-content h1{
+            font-size: 35px;
+            line-height: 35px;
+    }
+
 }
