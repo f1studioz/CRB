@@ -1531,6 +1531,9 @@ section.services {
         padding:5px;
         font-size: 12px;
     }
+    .slider-bg-img{
+        padding-top: 130px;
+    }
     .slider-bg-img.tab-3{
         padding-top:100px;
     }
@@ -1546,5 +1549,23 @@ section.services {
     display: inherit;
     text-align: left;
     }
-  
+    .slider-bg-img.tab-1{
+        background-position: -920px;
+    }
+    .slider-bg-img.tab-2{
+        background-position: -250px;
+    }
+    .slider-bg-img.tab-3{
+        background-position: -80px;
+    }  
+    .slider-bg-img.tab-4:before{
+        content: '';
+        width:100%;
+        height: 100vh;
+        position: absolute;
+        top:0;
+        left: 0;
+        opacity: 0.5;;
+        background:#ea6a2b;
+    }
 }
