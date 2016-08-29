@@ -37,7 +37,7 @@ p.custom-subtitle{
 .slider-1{
      background:url('../images/custom-images/crb/rich_couple.jpg') no-repeat; 
       background-size:cover;
-
+ background-attachment:fixed;
     
 }
     
@@ -1604,4 +1604,9 @@ section.services {
     .gototop-button{
         display: none !important;
     }
+    .slider-1{
+    
+ background-attachment:scroll;
+    
+}
 }
