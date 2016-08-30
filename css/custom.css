@@ -1140,7 +1140,7 @@ div#tabs-07 {
      color: #3e474c;
 }
 .insight-cont:hover .insight-text a{
-    text-decoration: underline !important;
+    color:#ea6a2b; !important;
 }
 /*************************************insight-retail**********************************/
 /*******************************************take-control****************/
