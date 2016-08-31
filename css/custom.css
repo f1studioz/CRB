@@ -24,7 +24,7 @@ p.custom-subtitle{
 }
 /*****************************banner*****************/
 .home-slider{
-    height:80vh;
+    height:70vh;
 }
 
 .about-slider{
@@ -36,8 +36,8 @@ p.custom-subtitle{
 
 .slider-1{
      background:url('../images/custom-images/crb/rich_couple.jpg') no-repeat; 
-      background-size:cover;
-
+      background-size:100;
+    background-position:right bottom;
     
 }
     
@@ -49,7 +49,7 @@ p.custom-subtitle{
     color: #fff
 }
 .slider-content{
-    height: 80vh;
+    height: 70vh;
     position: relative;
 }
 .middle-content{
@@ -460,7 +460,7 @@ footer .copy{
     padding:0px 30px;
 }
 .version1 .pricing-table .plan{
-    border-radius: 20px;
+    border-radius:5px;
     text-align: center;
     box-shadow: 0px 1.5px 2px rgba(0,0,0,0.1);
 }
@@ -469,7 +469,7 @@ footer .copy{
     position: relative;
     color: #fff;
     padding:80px 0px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius:5px 5px 0px 0px;
 }
 .version1 .pricing-table .plan .plan-header:after{
     content: '';
@@ -481,7 +481,7 @@ footer .copy{
     z-index:-1;
    
     opacity: 1;
-     border-radius: 20px 20px 0px 0px;
+     border-radius: 5px 5px 0px 0px;
 }
 .version1 .pricing-table .plan.one .plan-header:after{
      background-image:url('../images/custom-images/crb/investment.jpeg'); background-repeat:  no-repeat;
@@ -500,7 +500,7 @@ footer .copy{
     font-weight: 400;
 }
 .version1 .pricing-table .plan-list{
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 5px 5px;
         background:#fff;
     padding-bottom: 25px;
     
@@ -917,7 +917,7 @@ section.services {
     border: none;
 }
 .slider-bg-img{
-    height: 80vh;
+    height: 70vh;
       padding-top: 180px;      
 }
 div#tabs-07 {
@@ -933,8 +933,9 @@ div#tabs-07 {
     background-size: cover;
 }
 .slider-bg-img.tab-3{
-    background: url('../images/custom-images/crb/Mobile%20Banking%20with%20Coffee.jpg') no-repeat;
-    background-size: cover;
+    background: url('../images/custom-images/crb/phone.jpg') no-repeat;
+    background-size:cover;
+    background-position: center;
     padding-top: 150px;
 }
 .slider-bg-img.tab-4{
@@ -999,7 +1000,7 @@ div#tabs-07 {
 }
 .products .post-image{
     border-radius: 3px 3px 0px 0px;
-   
+   margin-bottom: 0px;
     height:195px;
 }
 .products h1.custom-title{
@@ -1044,9 +1045,9 @@ div#tabs-07 {
 .products .post-item{
     border-bottom: none;
     padding-bottom: 0px;
-    
+    cursor: pointer;
     border-radius: 3px;
-    padding: 0px 16px;
+    padding: 0px 0px;
 }
 .products .post-content-details{
     padding-left:15px;
@@ -1054,9 +1055,11 @@ div#tabs-07 {
     background: #fff;
     border-radius: 0px 0px 3px 3px;
     box-shadow: 0px  1px 8px rgba(0,0,0,0.08); 
+    height:200px;
+    position: relative;
 }
 
-.products .post-title h3 a{
+.products .post-title h3 a,.quick-links .post-title h3{
     text-transform: capitalize;
     line-height: 22px;
     font-size: 15px;
@@ -1067,30 +1070,59 @@ div#tabs-07 {
     font-size: 15px;
     color: #231f20;
 }
-.products .post-description{
-    min-height: 60px;
-}
+
 .products .post-info{
     padding-top:45px;
     padding-bottom: 20px;
     margin-bottom: 0px;
 }
+.products .post-info i{
+    margin-left: 2px;
+    color: #107bbf;
+    font-size: 17px;
+}
 .products a.read-more {
     font-size: 15px;
     font-weight: 400;
-    text-transform: capitalize;
+    text-transform:none;
     color: #107bbf;
+    position: absolute;
+    
 }
 .products .post-item:hover  .post-content-details {
         box-shadow: 0px  1px 20px rgba(0,0,0,0.09); 
 }
-.products .post-item:hover a.read-more{
+.products .post-item:hover a.read-more,.products .post-item:hover .post-info i{
     color: #ea6a2b;
 }
 .products .post-item:first-child .post-info{
     padding-top: 30px;
 }
+.post-content-details.quick-links{
+    padding:0px 0px;
+    height: 395px;  
+}
+.post-content-details.quick-links .post-title h3{
+    text-align: center; 
+    margin-top:20px;
+    margin-left: 20px;
+}
 
+.quick-links ul{
+    margin-top:20px;
+    padding-left: 0px;
+}
+.quick-links ul li{
+    display:block;
+    padding:15px 20px;
+    border-bottom:1px solid rgba(0,0,0,0.09);
+}
+.quick-links ul li:last-child{
+    border-bottom: none;
+}
+.post-content-details.quick-links .post-info{
+    padding-left: 10px;
+}
 /*********************************Products****************************/
 /**********************************insight-retail*********************/
 .insight-cont{
@@ -1201,13 +1233,13 @@ footer .social ul li{
 @media(max-width:1500px){
     #mainMenu > ul {
     height: auto;
-    margin-left: 175px;
+    margin-left: 215px;
     }
 }
 @media(max-width:1280px){
     #mainMenu > ul {
     height: auto;
-    margin-left: 94px;
+    margin-left: 130px;
     }
 }
 @media(min-width:1400px){
@@ -1221,7 +1253,7 @@ footer .social ul li{
 @media(min-width:1550px){
     #mainMenu > ul {
     height: auto;
-    margin-left:245px;
+    margin-left:270px;
     }
    
 }
@@ -1232,6 +1264,8 @@ footer .social ul li{
     display: inherit;
     text-align: left;
     }
+    .slider-bg-img{
+    height: 80vh;
 }
 @media(max-width:768px){
     .fullscreen .text-small{
@@ -1348,9 +1382,9 @@ footer .social ul li{
     background-position:bottom left;
 }
 .slider-bg-img.tab-3{
-    background: url('../images/custom-images/crb/Mobile%20Banking%20with%20Coffee.jpg') no-repeat;
+    background: url('../images/custom-images/crb/phone.jpg') no-repeat;
     background-size: cover;
-    padding-top: 250px;
+    padding-top: 120px;
 }
 .slider-bg-img.tab-4{
     background: url('../images/custom-images/crb/travel2.jpg') no-repeat;
@@ -1583,6 +1617,7 @@ section.services {
     display: inherit;
     text-align: left;
     }
+    
     .slider-bg-img.tab-1{
         background-position: -920px;
     }
@@ -1591,6 +1626,7 @@ section.services {
     }
     .slider-bg-img.tab-3{
         background-position: -80px;
+         
     }  
     .slider-bg-img.tab-4:before{
         content: '';
