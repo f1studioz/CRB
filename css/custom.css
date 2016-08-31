@@ -1225,6 +1225,14 @@ footer .social ul li{
     }
    
 }
+@media(max-width:1000px){
+       .tabs-navigation li, .tabs-vertical .tabs-navigation li, .justified .tabs-navigation li, .justified .tabs-navigation li, .tabs-right .tabs-navigation li, .tabs-right .tabs-navigation li{
+            width:25%;
+    float: left;
+    display: inherit;
+    text-align: left;
+    }
+}
 @media(max-width:768px){
     .fullscreen .text-small{
         margin:0px 30px;
