@@ -1649,7 +1649,7 @@ section.services {
         display: none !important;
     }
     .slider-1{
-    
+    background-position: center !important;
  background-attachment:scroll;
     
 }
