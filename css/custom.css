@@ -1793,7 +1793,12 @@ footer .social ul li{
       .button-credit, .button-credit.fill:hover{
         padding:5px 20px;
     }
+    .owl-controls .owl-nav{
+        opacity: 1;
+    }
+    
 }
+  
 @media(max-width:480px){
     .fullscreen .text-small{
         font-size: 14px !important;
@@ -2053,5 +2058,55 @@ section.services {
 }
    
 }
+  @media(max-width:425px){
+      .compare-mobile .elements{
+          margin-top:586px;
+      }
+      .compare-mobile .elements h4{
+        font-size: 12px;
+        text-align: left;
+        padding:17px 0px;
+        border-top:1px solid rgba(0,0,0,0.08); 
+      }
+      .compare-mobile .elements h4.ms-1{
+        margin-bottom: -4px;  
+      }
+       .compare-mobile .elements h4.ms-2{
+        margin-bottom:14px;  
+      }
+}    
+  @media(max-width:375px){
+      .compare-mobile .elements{
+          margin-top:564px;
+      }
+      .compare-mobile .elements h4{
+        font-size: 12px;
+        text-align: left;
+        padding:18px 0px;
+        border-top:1px solid rgba(0,0,0,0.08); 
+      }
+      .compare-mobile .elements h4.ms-1{
+          margin-bottom: -4px;
+      }
+       .compare-mobile .elements h4.ms-2{
+        margin-bottom:10px;  
+      }
+}
+        @media(max-width:330px){
+         .compare-mobile .elements h4{
+        font-size: 12px;
+        text-align: left;
+        padding:10px 0px;
+             border-top:1px solid rgba(0,0,0,0.08); }
+             .compare-mobile .elements {
+    margin-top: 538px;
+}
+     .compare-mobile .elements h4.ms-1{
+          margin-bottom: 10px;
+      }
+        .compare-mobile .elements h4.ps-1{
+          padding-right: 42px;
+      }
+    }    
     
-    
+   
