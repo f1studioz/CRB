@@ -2007,6 +2007,16 @@ section.services {
         opacity: 0.5;;
         background:#ea6a2b;
     }
+     .saving .slider-bg-img.tab-4:before{
+        content: '';
+        width:100%;
+        height: 100vh;
+        position: absolute;
+        top:0;
+        left: 0;
+        opacity: 0;
+        background:#ea6a2b;
+    }
     .middle-content {
         margin-top:170px;    
         text-align: center;}
