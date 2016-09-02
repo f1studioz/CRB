@@ -264,7 +264,7 @@ var INSPIRO = {};
                         items: 1,
                         autoHeight: false,
                         video: $sliderCarouseVideo,
-                        responsiveRefreshRate:10    
+                        responsiveRefreshRate:1000    
                     });
 
 
