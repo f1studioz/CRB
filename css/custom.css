@@ -1757,12 +1757,29 @@ footer .social ul li{
    margin-top:150px;
    transform:translate(0%,0%);
         text-align: center;}
-    
+   .compare-cards table .thead-text .button-credit {
+    padding: 8px 18px;
+    font-size: 13px;
 }
-    .money-growth .version1 .pricing-table .plan-list{
+    .compare-cards table th.second .thead-text .button-credit{
+        margin-top: 87px;
+    }
+    .compare-cards table th:last-child .thead-text .button-credit {
+    margin-top: 171px;
+}
+    .button-credit, .button-credit.fill:hover{
+        padding:6px 38px;
+    }
+     .money-growth .version1 .pricing-table .plan-list{
         height: auto;
         padding:20px;
     }
+    .icon-box:hover:after {
+    transform: scale(0);
+}
+    
+}
+   
 @media (max-width: 600px){
     .middle-content {
     margin-top:120px;
@@ -2070,7 +2087,7 @@ section.services {
 }
   @media(max-width:425px){
       .compare-mobile .elements{
-          margin-top:586px;
+          margin-top:540px;
       }
       .compare-mobile .elements h4{
         font-size: 12px;
@@ -2087,7 +2104,7 @@ section.services {
 }    
   @media(max-width:375px){
       .compare-mobile .elements{
-          margin-top:564px;
+          margin-top:536px;
       }
       .compare-mobile .elements h4{
         font-size: 12px;
