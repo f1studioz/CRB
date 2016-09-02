@@ -16,7 +16,9 @@
     <link href="vendor/animateit/animate.min.css" rel="stylesheet">
 
     <!-- Vendor css -->
-    <link href="vendor/owlcarousel/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Template base -->
@@ -44,6 +46,7 @@
     <!--VENDOR SCRIPT-->
     <script src="vendor/jquery/jquery-1.11.2.min.js"></script>
     <script src="vendor/plugins-compressed.js"></script>
+    <script src=''></script>
 </head>
 
 <body class="wide">
@@ -284,15 +287,15 @@
                         <div class="elements">
                             <h4>Representative APR <br> rate</h4>
                             <h4>Purchase rate p.a.</h4>
-                            <h4>Interest free period</h4>
-                            <h4>International travel insurance</h4>
-                            <h4>Assumed credit limit</h4>
-                            <h4>Cash <br> back</h4>
+                            <h4 class="ms-2">Interest free period</h4>
+                            <h4 class='ms-1'>International travel insurance</h4>
+                            <h4 class="ms-2">Assumed credit limit</h4>
+                            <h4 class='ps-1'>Cash back</h4>
                             <h4>Redeem points instantly at Myer and Flight Center</h4>
                         </div>
                     </div>
                     <div class="col-xs-7">
-                          <div class="carousel" data-carousel-col="1">
+                          <div class="owl-carousel" data-carousel-col="1">
                           <div>
                                 <img src="images/custom-images/crb/credit-card-Gold.jpg" class="img-responsive">
                                 <div class="thead-text">
@@ -849,12 +852,12 @@
     </script>
     <script src="js/jquery.stellar.js"></script>
     <script src='js/swiper.jquery.min.js'></script>
-
+    <script src="js/owl.carousel.js"></script>
     <script>
-       
-        $(document).ready(function () {
-            $(window).stellar();
-        });
+     
+        $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
     </script>
 
 </body>
