@@ -11,6 +11,9 @@
     <title>Cognitivescale</title>
 
     <!-- Bootstrap Core CSS -->
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <link href="vendor/animateit/animate.min.css" rel="stylesheet">
@@ -44,6 +47,7 @@
     <!--VENDOR SCRIPT-->
     <script src="vendor/jquery/jquery-1.11.2.min.js"></script>
     <script src="vendor/plugins-compressed.js"></script>
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 
 <body class="wide">
@@ -75,9 +79,9 @@
 
                     <!--SHOPPING CART -->
 
-                    <div id="shopping-cart">
+                    <div id="shopping-cart" class="main-nav">
 
-                        <a href="#" class="sign-in-btn">Log on</a>
+                        <a class="sign-in-btn cd-signin" href="#">Log on</a>
                         <button class="lines-button x" type="button">
                             <span class="lines"></span>
                         </button>
@@ -125,6 +129,99 @@
             </div>
         </header>
 
+
+
+    <div class="cd-user-modal"> 
+        <div class="cd-user-modal-container"> 
+            <ul class="cd-switcher login-sec">
+                <li class="login-name1" ><a href="#0" class="header_title">Log In</a></li>
+                <li><a href="#0" class="new-user1 new-account" >New User? Create an account </a></li>
+
+                <li class="login-name2"><a href="#0" class="header_title">Register</a></li>
+                <li><a href="#0" class="exist-user2 already-account">You have already account? Log In </a></li>
+            </ul>
+            
+            <div id="cd-login"> <!-- log in form -->
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signin-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+                        <a href="#0" class="hide-password">Hide</a>
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me" class="remember-me">Remember me</label>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width" type="submit" value="Login">
+                    </p>
+                </form>
+                
+                <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+            </div> 
+
+            <div id="cd-signup"> <!-- sign up form -->
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signup-username">Username</label>
+                        <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+                        <a href="#0" class="hide-password">Hide</a>
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="accept-terms">
+                        <label for="accept-terms" class="accept-terms">I agree to the <a href="#0">Terms</a></label>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Create account">
+                    </p>
+                </form>
+
+            </div> <!-- cd-signup -->
+
+            <div id="cd-reset-password"> <!-- reset password form -->
+                <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Reset password">
+                    </p>
+                </form>
+
+                <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+            </div> <!-- cd-reset-password -->
+            <a href="#0" class="cd-close-form">Close</a>
+        </div> <!-- cd-user-modal-container -->
+    </div> <!-- cd-user-modal -->
 
         <header class="abs">
 
@@ -551,22 +648,13 @@
                                 <p>952-775-6021</p>
                             </li>
                             <li>
-                                <!--<ul class="social">
-                        <li><a href='#'><i class='fa fa-facebook'></i></a></li>
-                        <li><a href='#'><i class='fa fa-twitter'></i></a></li>
-                        <li><a href='#'><i class='fa fa-pinterest'></i></a></li>
-                        <li><a href='#'><i class='fa fa-linkedin'></i></a></li>
-                    </ul>-->
+                             
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="googleMap">
-
-        </section>
-
         <!-- LATEST WORK -->
 
 
@@ -713,178 +801,11 @@
 
     <!-- GO TOP BUTTON -->
     <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
-
-    <!-- Theme Base, Components and Settings -->
     <script src="js/theme-functions.js"></script>
 
     <!-- Custom js file -->
-    <script src="js/custom.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS3735mjSJsQ-tROUfaLqkuAjXPf39N9M">
-    </script>
-
-    <script>
-        var myCenter = new google.maps.LatLng(27.6648, 81.5158);
-
-        function initialize() {
-            var mapProp = {
-                center: myCenter,
-                zoom: 12,
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                styles: [{
-                    "featureType": "water",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#e9e9e9"
-                    }, {
-                        "lightness": 17
-                    }]
-                }, {
-                    "featureType": "landscape",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#f5f5f5"
-                    }, {
-                        "lightness": 20
-                    }]
-                }, {
-                    "featureType": "road.highway",
-                    "elementType": "geometry.fill",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 17
-                    }]
-                }, {
-                    "featureType": "road.highway",
-                    "elementType": "geometry.stroke",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 29
-                    }, {
-                        "weight": 0.2
-                    }]
-                }, {
-                    "featureType": "road.arterial",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 18
-                    }]
-                }, {
-                    "featureType": "road.local",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 16
-                    }]
-                }, {
-                    "featureType": "poi",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#f5f5f5"
-                    }, {
-                        "lightness": 21
-                    }]
-                }, {
-                    "featureType": "poi.park",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#dedede"
-                    }, {
-                        "lightness": 21
-                    }]
-                }, {
-                    "elementType": "labels.text.stroke",
-                    "stylers": [{
-                        "visibility": "on"
-                    }, {
-                        "color": "#ffffff"
-                    }, {
-                        "lightness": 16
-                    }]
-                }, {
-                    "elementType": "labels.text.fill",
-                    "stylers": [{
-                        "saturation": 36
-                    }, {
-                        "color": "#333333"
-                    }, {
-                        "lightness": 40
-                    }]
-                }, {
-                    "elementType": "labels.icon",
-                    "stylers": [{
-                        "visibility": "off"
-                    }]
-                }, {
-                    "featureType": "transit",
-                    "elementType": "geometry",
-                    "stylers": [{
-                        "color": "#f2f2f2"
-                    }, {
-                        "lightness": 19
-                    }]
-                }, {
-                    "featureType": "administrative",
-                    "elementType": "geometry.fill",
-                    "stylers": [{
-                        "color": "#fefefe"
-                    }, {
-                        "lightness": 20
-                    }]
-                }, {
-                    "featureType": "administrative",
-                    "elementType": "geometry.stroke",
-                    "stylers": [{
-                        "color": "#fefefe"
-                    }, {
-                        "lightness": 17
-                    }, {
-                        "weight": 1.2
-                    }]
-                }],
-                scrollwheel: false,
-                navigationControl: false,
-                mapTypeControl: false,
-                scaleControl: false,
-                draggable: false,
-            };
-
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-
-
-            var infowindow = new google.maps.InfoWindow({
-                content: "2300 W Arbutus Dr <br>Citru Springs, FL 34434, USA",
-                position: myCenter
-            });
-
-            infowindow.open(map);
-        }
-
-        google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-    <script src="js/jquery.stellar.js"></script>
-    <script src='js/swiper.jquery.min.js'></script>
-
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            spaceBetween: 0,
-            simulateTouch: false
-
-        })
-        $(document).ready(function() {
-            $(window).stellar();
-        });
-    </script>
-
+    <script src="js/custom.js"></script> 
+    <script src="js/main.js"></script> <!-- Gem jQuery -->
 </body>
 
 </html>

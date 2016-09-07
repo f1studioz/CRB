@@ -11,6 +11,9 @@
     <title>Cognitivescale</title>
 
     <!-- Bootstrap Core CSS -->
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <link href="vendor/animateit/animate.min.css" rel="stylesheet">
@@ -44,6 +47,7 @@
     <!--VENDOR SCRIPT-->
     <script src="vendor/jquery/jquery-1.11.2.min.js"></script>
     <script src="vendor/plugins-compressed.js"></script>
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 </head>
 
 <body class="wide">
@@ -75,9 +79,9 @@
 
                     <!--SHOPPING CART -->
 
-                    <div id="shopping-cart">
+                    <div id="shopping-cart" class="main-nav">
 
-                        <a href="#" class="sign-in-btn">Log on</a>
+                        <a href="#" class="sign-in-btn cd-signin">Log on</a>
                         <button class="lines-button x" type="button">
                             <span class="lines"></span>
                         </button>
@@ -125,7 +129,97 @@
             </div>
         </header>
 
+     <div class="cd-user-modal"> 
+        <div class="cd-user-modal-container"> 
+            <ul class="cd-switcher login-sec">
+                <li class="login-name1" ><a href="#0" class="header_title">Log In</a></li>
+                <li><a href="#0" class="new-user1 new-account" >New User? Create an account </a></li>
 
+                <li class="login-name2"><a href="#0" class="header_title">Register</a></li>
+                <li><a href="#0" class="exist-user2 already-account">You have already account? Log In </a></li>
+            </ul>
+            
+            <div id="cd-login"> <!-- log in form -->
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signin-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+                        <a href="#0" class="hide-password">Hide</a>
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me" class="remember-me">Remember me</label>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width" type="submit" value="Login">
+                    </p>
+                </form>
+                
+                <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+            </div> 
+
+            <div id="cd-signup"> <!-- sign up form -->
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signup-username">Username</label>
+                        <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+                        <a href="#0" class="hide-password">Hide</a>
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input type="checkbox" id="accept-terms">
+                        <label for="accept-terms" class="accept-terms">I agree to the <a href="#0">Terms</a></label>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Create account">
+                    </p>
+                </form>
+
+            </div> <!-- cd-signup -->
+
+            <div id="cd-reset-password"> <!-- reset password form -->
+                <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Reset password">
+                    </p>
+                </form>
+
+                <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+            </div> <!-- cd-reset-password -->
+            <a href="#0" class="cd-close-form">Close</a>
+        </div> <!-- cd-user-modal-container -->
+    </div> <!-- cd-user-modal -->
         <header class="abs">
 
             <div class="swiper-container">
@@ -482,6 +576,7 @@
             $(window).stellar();
         });
     </script>
+    <script src="js/main.js"></script> <!-- Gem jQuery -->
 
 </body>
 
