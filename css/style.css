@@ -329,7 +329,7 @@ xsigin/signup popup
   appearance: none;
 }
 .cd-form input.has-border:focus {
-  border-color: #343642;
+  border-color: #ea6a2b;
   box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
   outline: none;
 }
